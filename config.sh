@@ -22,7 +22,7 @@ chmod 700 get_helm.sh
 
 # NFS installation
 helm repo add nfs-ganesha-server-and-external-provisioner https://kubernetes-sigs.github.io/nfs-ganesha-server-and-external-provisioner/
-helm install nfs-server-provisioner nfs-ganesha-server-and-external-provisioner/nfs-server-provisioner -f ./config_files/cfs-config.yaml
+helm install nfs-server-provisioner nfs-ganesha-server-and-external-provisioner/nfs-server-provisioner -f ./config_files/nfs-config.yaml
 
 # config files application
 kubectl apply -f ./config_files/persistent_volume_claim.yaml
